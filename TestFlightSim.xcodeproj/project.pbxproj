@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61281DF71AAD1940002E9392 /* fly.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61281DF61AAD1940002E9392 /* fly.cpp */; };
+		61281DFA1AAD19C6002E9392 /* landscape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61281DF81AAD19C6002E9392 /* landscape.cpp */; };
+		61281DFC1AAD1A10002E9392 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61281DFB1AAD1A10002E9392 /* OpenGL.framework */; };
+		61281DFE1AAD1A16002E9392 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61281DFD1AAD1A16002E9392 /* GLUT.framework */; };
+		617896E31AAD37A800A430E7 /* glew.h in Frameworks */ = {isa = PBXBuildFile; fileRef = 617896E21AAD37A800A430E7 /* glew.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		61281DE91AAD18BC002E9392 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		61281DEB1AAD18BC002E9392 /* TestFlightSim */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestFlightSim; sourceTree = BUILT_PRODUCTS_DIR; };
+		61281DF51AAD18E2002E9392 /* cockpit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = cockpit.h; sourceTree = "<group>"; };
+		61281DF61AAD1940002E9392 /* fly.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fly.cpp; sourceTree = "<group>"; };
+		61281DF81AAD19C6002E9392 /* landscape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = landscape.cpp; sourceTree = "<group>"; };
+		61281DF91AAD19C6002E9392 /* landscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = landscape.h; sourceTree = "<group>"; };
+		61281DFB1AAD1A10002E9392 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		61281DFD1AAD1A16002E9392 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		61281DFF1AAD1AD4002E9392 /* ship.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ship.h; sourceTree = "<group>"; };
+		61281E001AAD1B15002E9392 /* geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = geometry.h; sourceTree = "<group>"; };
+		617896E21AAD37A800A430E7 /* glew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = glew.h; path = "../../Downloads/CS418 - Slides/hellotriangle_linux/GL/glew.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		61281DE81AAD18BC002E9392 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				617896E31AAD37A800A430E7 /* glew.h in Frameworks */,
+				61281DFE1AAD1A16002E9392 /* GLUT.framework in Frameworks */,
+				61281DFC1AAD1A10002E9392 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		61281DE21AAD18BC002E9392 = {
+			isa = PBXGroup;
+			children = (
+				617896E21AAD37A800A430E7 /* glew.h */,
+				61281DFD1AAD1A16002E9392 /* GLUT.framework */,
+				61281DFB1AAD1A10002E9392 /* OpenGL.framework */,
+				61281DED1AAD18BC002E9392 /* TestFlightSim */,
+				61281DEC1AAD18BC002E9392 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		61281DEC1AAD18BC002E9392 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				61281DEB1AAD18BC002E9392 /* TestFlightSim */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		61281DED1AAD18BC002E9392 /* TestFlightSim */ = {
+			isa = PBXGroup;
+			children = (
+				61281DF51AAD18E2002E9392 /* cockpit.h */,
+				61281DF61AAD1940002E9392 /* fly.cpp */,
+				61281DF81AAD19C6002E9392 /* landscape.cpp */,
+				61281DF91AAD19C6002E9392 /* landscape.h */,
+				61281DFF1AAD1AD4002E9392 /* ship.h */,
+				61281E001AAD1B15002E9392 /* geometry.h */,
+			);
+			path = TestFlightSim;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		61281DEA1AAD18BC002E9392 /* TestFlightSim */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61281DF21AAD18BC002E9392 /* Build configuration list for PBXNativeTarget "TestFlightSim" */;
+			buildPhases = (
+				61281DE71AAD18BC002E9392 /* Sources */,
+				61281DE81AAD18BC002E9392 /* Frameworks */,
+				61281DE91AAD18BC002E9392 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestFlightSim;
+			productName = TestFlightSim;
+			productReference = 61281DEB1AAD18BC002E9392 /* TestFlightSim */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		61281DE31AAD18BC002E9392 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = mpknox2;
+				TargetAttributes = {
+					61281DEA1AAD18BC002E9392 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 61281DE61AAD18BC002E9392 /* Build configuration list for PBXProject "TestFlightSim" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 61281DE21AAD18BC002E9392;
+			productRefGroup = 61281DEC1AAD18BC002E9392 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				61281DEA1AAD18BC002E9392 /* TestFlightSim */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		61281DE71AAD18BC002E9392 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61281DFA1AAD19C6002E9392 /* landscape.cpp in Sources */,
+				61281DF71AAD1940002E9392 /* fly.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		61281DF01AAD18BC002E9392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		61281DF11AAD18BC002E9392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		61281DF31AAD18BC002E9392 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		61281DF41AAD18BC002E9392 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		61281DE61AAD18BC002E9392 /* Build configuration list for PBXProject "TestFlightSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61281DF01AAD18BC002E9392 /* Debug */,
+				61281DF11AAD18BC002E9392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		61281DF21AAD18BC002E9392 /* Build configuration list for PBXNativeTarget "TestFlightSim" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61281DF31AAD18BC002E9392 /* Debug */,
+				61281DF41AAD18BC002E9392 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 61281DE31AAD18BC002E9392 /* Project object */;
+}
